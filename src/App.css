@@ -65,3 +65,33 @@ p {
     font-size: 2rem;
     margin-top: 0;
 }
+
+/* meals list css  */
+.list-container{     
+    margin: auto;   
+    margin-top: 20px;         
+    width: 53%;
+    padding: 10px ;
+    background-color: white;
+    border-radius: 20px;
+    height: 500px;
+    overflow: auto;
+}
+
+.list-container ul{
+    padding-left: 20px;
+}
+
+.list-container p{
+    font-weight: bold;    
+}
+
+.list-container p:nth-of-type(2){
+    color: brown;
+}
+.list-container li{
+    list-style: none;
+    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
+    margin-bottom: 10px;   
+}
