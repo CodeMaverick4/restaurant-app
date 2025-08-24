@@ -1,0 +1,34 @@
+p {
+    margin: 0px;
+}
+
+.header {
+    height: 5rem;
+    background-color: #8a2b06;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #3A1504;
+    padding: 10px;
+    border-radius: 10px;
+    white-space: nowrap;
+    /* color: white; */
+}
+
+.cart div {
+    background-color: #993A24;
+    height: 40px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
