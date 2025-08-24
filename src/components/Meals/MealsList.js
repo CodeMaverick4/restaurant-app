@@ -37,13 +37,24 @@ const MealsList = (props) => {
             <ul>
                 {DUMMY_MEALS.map(meal => (
                     <li key={meal.id}>
-                        <p>{meal.name}</p>
-                        <small><i>{meal.description}</i></small>
-                        <p>${meal.price}</p>
+                        <div>
+                            <p>{meal.name}</p>
+                            <small><i>{meal.description}</i></small>
+                            <p>${meal.price}</p>
+                        </div>
+                        <div className="list-quantity">
+                            <div >
+                                <label htmlFor="">Amount </label>
+                                <input type="number" min={0}/>
+                            </div>
+                            <div>
+                                <button><img src={'assets/plus.png'} height={20} alt="" />Add</button>
+                            </div>
+                        </div>
                     </li>
 
                 ))
-            }
+                }
             </ul>
         </div>
     )
