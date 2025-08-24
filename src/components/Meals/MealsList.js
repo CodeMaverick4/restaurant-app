@@ -48,7 +48,7 @@ const MealsList = (props) => {
                                 <input type="number" min={0}/>
                             </div>
                             <div>
-                                <button><img src={'assets/plus.png'} height={20} alt="" />Add</button>
+                                <button className="btn btn-primary"><img src={'assets/plus.png'} height={20} alt="" />Add</button>
                             </div>
                         </div>
                     </li>

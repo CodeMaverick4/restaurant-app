@@ -2,6 +2,35 @@ p {
     margin: 0px;
 }
 
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0px;
+}
+
+.btn {
+    outline: none;
+    border-radius: 50px;
+    padding: 4px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    /* margin: auto; */
+}
+
+.btn-primary {
+    background-color: brown;
+    color: white;
+}
+
+.btn-secondary {
+    color: brown;
+    border: 1px solid brown;
+}
+
 .header {
     height: 5rem;
     background-color: #8a2b06;
@@ -50,7 +79,7 @@ p {
 /* meals section  */
 .meal-summary {
     background-color: #383838;
-    color: white;    
+    color: white;
     border-radius: 14px;
     width: 50%;
     margin: auto;
@@ -67,65 +96,86 @@ p {
 }
 
 /* meals list css  */
-.list-container{     
-    margin: auto;   
-    margin-top: 20px;         
+.list-container {
+    margin: auto;
+    margin-top: 20px;
     width: 53%;
-    padding: 10px ;
+    padding: 10px;
     background-color: white;
     border-radius: 20px;
     height: 500px;
     overflow: auto;
 }
 
-.list-container ul{
+.list-container ul {
     padding-left: 20px;
 }
 
-.list-container p{
-    font-weight: bold;    
+.list-container p {
+    font-weight: bold;
 }
 
-.list-container p:nth-of-type(2){
+.list-container p:nth-of-type(2) {
     color: brown;
 }
-.list-container li{
+
+.list-container li {
     list-style: none;
     border-bottom: 1px solid gray;
     padding-bottom: 15px;
-    margin-bottom: 10px;   
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.list-quantity{
+.list-quantity {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.list-quantity div{
+.list-quantity div {
     display: flex;
     gap: 10px;
 }
-.list-quantity label{
+
+.list-quantity label {
     font-weight: bold;
 }
-.list-quantity input{
+
+.list-quantity input {
     width: 50px;
     border-radius: 4px;
 }
 
-.list-quantity button{
-    background-color: brown;
-    color: white;
-    outline: none;
-    border-radius: 50px;
-    padding: 4px 20px ;
+/* modal css  */
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;    
+    width: 40%;
+}
+
+.modal div:nth-of-type(1){
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.modal div:nth-of-type(2){
+    margin-top: 5px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
     gap: 5px;
-    margin: auto;
 }
