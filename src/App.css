@@ -46,7 +46,7 @@ ul {
     align-items: center;
     gap: 15px;
     background-color: #3A1504;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border-radius: 30px;
     white-space: nowrap;
     /* color: white; */
@@ -54,8 +54,8 @@ ul {
 
 .cart div {
     background-color: #993A24;
-    height: 40px;
-    width: 45px;
+    height: 35px;
+    width: 40px;
     border-radius: 50%;
     display: flex;
     align-items: center;

@@ -1,7 +1,7 @@
 import { createPortal } from "react-dom";
 
-export default function Modal({children}) {
-  
+export default function Modal({isOpen,children}) {
+  if(!isOpen) return
 
   return createPortal(
     <div className="backdrop">
