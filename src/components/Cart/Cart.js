@@ -6,11 +6,11 @@ const Cart = (props) => {
     const ctx = useContext(CartContext);
 
     return (
-        <div onClick={props.onClick}>
-            <div className="cart">
+        <div >
+            <div className="cart" onClick={props.onClick}>
                 <CartIcon />
                 <p>Your Cart</p>
-                <div>{ctx.totalAmount}</div>
+                <div>{ctx.items.length}</div>
             </div>
         </div>
     )
